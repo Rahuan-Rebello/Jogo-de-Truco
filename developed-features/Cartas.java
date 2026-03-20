@@ -8,12 +8,12 @@ public class Cartas {
     private static final List<String> CARTAS = List.of("4","5","6","7","Q","J","K","A","2","3");
     private static final List<String> NAIPES = List.of("Ouros", "Espadas", "Copas", "Paus");
 
-    public List<String> getCartas()
+    public static List<String> getCartas()
     {
         return CARTAS;
     }
 
-    public List<String> getNaipes()
+    public static List<String> getNaipes()
     {
         return NAIPES;
     }
