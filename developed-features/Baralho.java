@@ -47,7 +47,7 @@ public class Baralho
         System.out.println("As cartas foram embaralhadas");
     }
 
-public void definirVira() {
+    public void definirVira() {
     if (this.baralho != null && this.baralho.length > 0) {
         this.vira = this.baralho[0]; 
         System.out.println("--- VIRA DA RODADA ---");
@@ -57,7 +57,7 @@ public void definirVira() {
     }
 }
 
-public String identificarManilha() {
+    public String identificarManilha() {
     List<String> ordem = Cartas.getCartas();
     
     int indiceVira = ordem.indexOf(this.vira.valor);
@@ -65,9 +65,9 @@ public String identificarManilha() {
     int indiceManilha = (indiceVira + 1) % ordem.size();
     
     return ordem.get(indiceManilha);
-}
+    }
 
-public int calcularForcaReal(String valorManilha) {
+    public int calcularForcaReal(String valorManilha) {
 
     if (!this.valor.equals(valorManilha)) {
         return this.forca; 
@@ -81,4 +81,14 @@ public int calcularForcaReal(String valorManilha) {
         default:        return this.forca;
     }
 }    
+
+    public Baralho getValor()
+    {
+        return this.valor;
+    }
+    public Baralho getNaipe()
+    {
+        return this.naipe;
+    }
+
 }
