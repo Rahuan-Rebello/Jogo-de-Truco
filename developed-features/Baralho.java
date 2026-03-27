@@ -73,7 +73,8 @@ public class Baralho
         return this.forca; 
     }
     
-      switch (this.naipe) {
+    
+    switch (this.naipe) {
         case "Paus":    return 100;
         case "Copas":   return 90;
         case "Espadas": return 80;
@@ -82,11 +83,11 @@ public class Baralho
     }
 }    
 
-    public Baralho getValor()
+    public String getValor()
     {
         return this.valor;
     }
-    public Baralho getNaipe()
+    public String getNaipe()
     {
         return this.naipe;
     }
