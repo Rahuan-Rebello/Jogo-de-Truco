@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 
 public class Jogador {
     private int pontuacao;
@@ -29,4 +30,16 @@ public class Jogador {
             }
         }
     }
+
+    public Baralho jogarCarta(int escolha){
+        switch (escolha) {
+            case 1: return this.mao[0];
+            case 2: return this.mao[1];
+            case 3: return this.mao[2];
+            default:
+                System.out.println("Erro! Escolha um número de 1 a 3!");
+                return null;
+        }
+    }
+
 }

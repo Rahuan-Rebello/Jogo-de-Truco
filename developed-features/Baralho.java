@@ -91,5 +91,9 @@ public class Baralho
     {
         return this.naipe;
     }
-
+    public int getForca()
+    {
+        return this.forca;
+    }
+    
 }
