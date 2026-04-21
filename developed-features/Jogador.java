@@ -1,9 +1,5 @@
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
-
 public class Jogador {
+
     private int pontuacao;
     private String nome;
     private Baralho[] mao = new Baralho[3];
@@ -17,29 +13,58 @@ public class Jogador {
     public void getBaralhoJogador(Baralho carta, int posicao)
     {
         if (posicao >= 0 && posicao < 3)
-            {
-                this.mao[posicao] = carta; 
-            }
+        {
+            this.mao[posicao] = carta;
+        }
     }
 
     public void mostrarMao() {
-        System.out.println("Mão do " + nome + ":");
-        for (Baralho c : mao) {
-            if (c != null) {
-                System.out.println("- " + c.getValor() + " de " + c.getNaipe());
+
+        System.out.println("\nMão do " + nome + ":");
+
+        for (int i = 0; i < mao.length; i++) {
+
+            if (mao[i] != null) {
+
+                System.out.println((i + 1) + " - " + mao[i].getValor() + " de " + mao[i].getNaipe());
+
             }
+
         }
     }
 
     public Baralho jogarCarta(int escolha){
-        switch (escolha) {
-            case 1: return this.mao[0];
-            case 2: return this.mao[1];
-            case 3: return this.mao[2];
-            default:
-                System.out.println("Erro! Escolha um número de 1 a 3!");
-                return null;
+
+        int indice = escolha - 1;
+
+        if (indice < 0 || indice >= mao.length) {
+
+            System.out.println("Escolha inválida!");
+            return null;
+
         }
+
+        if (mao[indice] == null) {
+
+            System.out.println("Essa carta já foi usada!");
+            return null;
+
+        }
+
+        Baralho cartaJogada = mao[indice];
+
+        mao[indice] = null; // REMOVE A CARTA DA MÃO
+
+        return cartaJogada;
+    }
+
+    public void setPontuacao(int pontos)
+    {
+        this.pontuacao = pontos;
+    }
+    public int getPontuacao()
+    {
+        return this.pontuacao;
     }
 
 }
