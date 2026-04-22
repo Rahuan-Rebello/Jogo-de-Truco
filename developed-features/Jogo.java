@@ -20,7 +20,7 @@ public class Jogo {
         Truco truco = new Truco();
 
 
-    do{        
+    while(j1.getPontuacao() <= 11 || j2.getPontuacao() <= 11) {        
             Baralho baralho = new Baralho("", "", 0);
 
             baralho.inicializarBaralho();
@@ -53,6 +53,7 @@ public class Jogo {
                 while (cartaJ1 == null) {
 
                     j1.mostrarMao();
+                    System.out.println("Pontuação atual do " + nome1 + ": " + j1.getPontuacao());
 
                         System.out.println("\n" + nome1 + " quer pedir TRUCO? (s/n)");
                         String trucolt = sc.nextLine();
@@ -74,7 +75,6 @@ public class Jogo {
 
                     cartaJ1 = j1.jogarCarta(escolha1);
 
-
                 }
 
                 if (alguemCorreu) break;
@@ -84,6 +84,7 @@ public class Jogo {
                 while (cartaJ2 == null) {
 
                     j2.mostrarMao();
+                    System.out.println("Pontuação atual do " + nome2 + ": " + j2.getPontuacao());
 
                     System.out.println("\n" + nome2 + " quer pedir TRUCO? (s/n)");
                         String trucolt = sc.nextLine();
@@ -127,7 +128,7 @@ public class Jogo {
                     System.out.println(nome2 + " ganhou a vaza!");
                     pontosJ2 = valorRodada + pontosJ2;
                     j2.setPontuacao(j2.getPontuacao() + pontosJ2);
-                    System.out.println("Jogador está com " + j1.getPontuacao() + " pontos");
+                    System.out.println("Jogador está com " + j2.getPontuacao() + " pontos");
 
 
                 }
@@ -140,32 +141,37 @@ public class Jogo {
                 if (pontosJ1 == 2 || pontosJ2 == 2) {
                     break;
                 }
+
+                truco.setContTruco(1);
+
+                if (j1.getPontuacao() >= 12 || j2.getPontuacao() >= 12) break;
             }
 
             System.out.println("\n===== RESULTADO =====");
 
             if (pontosJ1 > pontosJ2) {
 
-                System.out.println(nome1 + " venceu a rodada e ganhou " + valorRodada + " pontos!");
+                System.out.println(nome1 + " venceu a rodada e ganhou " + valorRodada + " pontos!\n");
 
             }
             else if (pontosJ2 > pontosJ1) {
 
-                System.out.println(nome2 + " venceu a rodada e ganhou " + valorRodada + " pontos!");
+                System.out.println(nome2 + " venceu a rodada e ganhou " + valorRodada + " pontos!\n");
 
             }
             else {
 
                 System.out.println("Rodada empatada!");
-
             }
-        }while(j1.getPontuacao() <= 12 || j2.getPontuacao() <= 12);
+
+            if (j1.getPontuacao() >= 12 || j2.getPontuacao() >= 12) break;
+        }
 
         if(j1.getPontuacao() >= 12) {
-            System.out.println("Jogador" + j1 + "Farmou aura");
+            System.out.println("\nJogador " + nome1 + " Farmou aura\n");
         }
         else if(j2.getPontuacao() >= 12) {
-            System.out.println("Jogador" + j2 + "Farmou aura");
+            System.out.println("\nJogador " + nome2 + " Farmou aura\n");
         }
 
         sc.close();
