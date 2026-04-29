@@ -3,7 +3,6 @@ public class Jogador {
     private int pontuacao;
     private String nome;
     private Baralho[] mao = new Baralho[3];
-    private boolean controlePonto = false;
 
     public Jogador(int pontuacao, String nome)
     {
@@ -69,12 +68,4 @@ public class Jogador {
         return this.pontuacao;
     }
 
-    public void setControlePonto(boolean venceuRodada)
-    {
-        this.controlePonto = venceuRodada;
-    }
-    public boolean getControlePonto()
-    {
-        return this.controlePonto;
-    }
 }

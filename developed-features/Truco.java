@@ -33,7 +33,6 @@ public class Truco {
                                 System.out.println(nome2 + " correu!");
                                 System.out.println(nome1 + " ganha " + this.contTruco);
                                 jogador1.setPontuacao(pontosAnteriores + this.contTruco);
-                                jogador1.setControlePonto(true);
                                 this.contTruco = 0;
                                 return 0;
                             }                     
@@ -42,7 +41,6 @@ public class Truco {
                                 System.out.println(nome1 + " ganha " + pontuacaoAoCorrer);
                                 this.contTruco = 0;
                                 jogador1.setPontuacao(pontosAnteriores + pontuacaoAoCorrer);
-                                jogador1.setControlePonto(true);
                                 return 0;
                             }
                     case "a":

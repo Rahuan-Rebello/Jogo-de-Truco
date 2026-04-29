@@ -128,13 +128,10 @@ public class Jogo {
                 if (forca1 > forca2) {
                     vazasGanhasJ1++;
                     System.out.println(nome1 + " ganhou a vaza!");
-                    j1.setControlePonto(true);
-
                 }
                 else if (forca2 > forca1) {
                     vazasGanhasJ2++;
                     System.out.println(nome2 + " ganhou a vaza!");            
-                    j2.setControlePonto(true);
                 }
                 else {
 
@@ -143,9 +140,6 @@ public class Jogo {
                 }
 
                 if (vazasGanhasJ1 == 2 || vazasGanhasJ2 == 2) break;
-
-                j1.setControlePonto(false);
-                j2.setControlePonto(false); 
 
                 if (j1.getPontuacao() >= 12 || j2.getPontuacao() >= 12) break;
             }
@@ -170,8 +164,6 @@ public class Jogo {
                 System.out.println("Rodada empatada!");
             }
 
-            j1.setControlePonto(false);
-            j2.setControlePonto(false);
 
             truco.setContTruco(0);
 
