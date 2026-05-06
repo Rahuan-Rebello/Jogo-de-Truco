@@ -23,7 +23,7 @@ O software gerencia o ciclo completo de uma partida, desde o embaralhamento e di
 [![All Contributors](https://img.shields.io/badge/all_contributors-X-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-...seu conteúdo...
+DEVS:
 
 ## Contributors ✨
 
@@ -34,6 +34,14 @@ O software gerencia o ciclo completo de uma partida, desde o embaralhamento e di
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/azedoo"><img src="https://avatars.githubusercontent.com/u/189450279?v=4" width="100px;" alt="Contributor Name"/><br /><sub><b>Eduardo Azevedo</b></sub></a><br /><a href="https://github.com/azedoo" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/rahuan-rebello"><img src="https://avatars.githubusercontent.com/u/178526058?s=400&u=f1152505cffd3b02cd3c7769d567337862fe2827&v=4" width="100px;" alt="Contributor Name"/><br /><sub><b>Rahuan Rebello</b></sub></a><br /><a href="https://github.com/rahuan-rebello" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
