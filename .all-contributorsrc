@@ -4,7 +4,16 @@
   ],
   "imageSize": 100,
   "commit": false,
-  "contributors": [],
+  "contributors": [
+      "login": "azedoo",
+      "name": "Eduardo Azevedo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189450279?v=4",
+      "profile": "https://github.com/azedoo",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+  ],
   "contributorsSortAlphabetically": true,
   "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=flat-square)](#contributors-)",
   "commitConvention": "angular",
