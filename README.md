@@ -14,3 +14,30 @@ O software gerencia o ciclo completo de uma partida, desde o embaralhamento e di
  - Gerenciamento de turnos e fluxo de jogo síncrono.
 
  - Código limpo e focado na legibilidade.
+
+
+
+## Contribuidores
+
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-X-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+...seu conteúdo...
+
+## Contributors ✨
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/contributor1"><img src="https://avatars.githubusercontent.com/u/123?v=4?s=100" width="100px;" alt="Contributor Name"/><br /><sub><b>Contributor Name</b></sub></a><br /><a href="#code-contributor1" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-start -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
