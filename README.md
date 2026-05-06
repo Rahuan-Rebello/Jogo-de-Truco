@@ -33,7 +33,7 @@ O software gerencia o ciclo completo de uma partida, desde o embaralhamento e di
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/contributor1"><img src="https://avatars.githubusercontent.com/u/123?v=4?s=100](https://avatars.githubusercontent.com/u/189450279?v=4" width="100px;" alt="Contributor Name"/><br /><sub><b>Eduardo Azevedo</b></sub></a><br /><a href="https://github.com/azedoo" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/azedoo"><img src="https://avatars.githubusercontent.com/u/189450279?v=4" width="100px;" alt="Contributor Name"/><br /><sub><b>Eduardo Azevedo</b></sub></a><br /><a href="https://github.com/azedoo" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
